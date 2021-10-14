@@ -1,11 +1,7 @@
-function calculate(){
-    return (
-        console.log("1")
-    );
-}
+
 function Serialconnection(props){
     return(
-        <button onClick = {calculate}>Serienschaltung</button>
+        <button onClick = {()=> console.log(props.value)}>Serienschaltung</button>
     );
 }
 export default Serialconnection;
