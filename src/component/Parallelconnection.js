@@ -1,6 +1,9 @@
-function Parallelconnection(){
+function Parallelconnection(props){
     return(
-        <button onClick = {()=> console.log(1)}>Parallelschaltung</button>
+        <div>
+        <button onClick = {props.onClick}>Parallelschaltung</button>
+            {props.result != 0 ? <h1>R Parallel: {props.result}</h1> : null}
+        </div>
     );
 }
 export default Parallelconnection;

@@ -1,7 +1,10 @@
 
 function Serialconnection(props){
     return(
-        <button onClick = {()=> console.log(props.value)}>Serienschaltung</button>
-    );
+        <div>
+            <button onClick = {props.onClick}>Serienschaltung</button>
+            {props.result != 0 ? <h1>R seriell: {props.result}</h1> : null}
+        </div>
+            );
 }
 export default Serialconnection;

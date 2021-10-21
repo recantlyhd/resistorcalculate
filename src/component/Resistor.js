@@ -5,8 +5,8 @@ function Resistor(props) {
         <div>
         <label>
             {props.title}:
-    <input type = "number" onChange={props.handleInput}/>
-    </label>
+            <input type = "number" onChange={(e) => props.handleInput(e.target.value)}/>
+        </label>
     </div>
     );
 }
