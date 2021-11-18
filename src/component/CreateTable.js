@@ -19,8 +19,6 @@ function CreateTable(props) {
                 })}
                 </tbody>
             </table>
-
-            }
         </div>
     );
 }
